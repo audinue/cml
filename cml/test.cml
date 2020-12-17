@@ -1,0 +1,7 @@
+<script>
+	var items = ['A', 'B', 'C']
+</script>
+
+<ul>
+	<li each="item in items" onclick="alert(item)">Item {{item}}</li>
+</ul>

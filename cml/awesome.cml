@@ -1,0 +1,28 @@
+<script>
+	var Greeting = require('./greeting.cml').Greeting
+</script>
+
+<style>
+	.red {
+		color: red;
+	}
+	@keyframes fadeIn {
+		from { opacity: 0 }
+		to { opacity: 1 }
+	}
+</style>
+
+<div class="red">Level 1</div>
+
+<component name="Hello">
+	<style>
+		.red {
+			color: green;
+		}
+	</style>
+	<div class="red" style="animation: fadeIn 1s">Level 2</div>
+</component>
+
+<Hello/>
+
+<Greeting name="Johnny"/>

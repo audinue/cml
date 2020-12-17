@@ -1,0 +1,8 @@
+<component name="Greeting" scope="module">
+	<component name="LOL">
+		Hello {{props.name}}!
+	</component>
+	<LOL name="{{props.name}}"/>
+</component>
+
+<Greeting name="John"/>
